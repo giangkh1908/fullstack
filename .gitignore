@@ -1,0 +1,68 @@
+# Dependencies
+node_modules/
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Production build
+dist/
+build/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# NestJS specific
+dist/
+node_modules/
+.env
+
+# Frontend (if using Next.js, React, etc.)
+.next/
+out/
+public/
+.vercel
+
+# Cache
+.cache/
+.eslintcache
+.prettierignore
+
+
+# github
+.github/
