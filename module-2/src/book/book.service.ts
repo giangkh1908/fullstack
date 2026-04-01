@@ -66,4 +66,13 @@ export class BookService {
     // Lưu toàn bộ 10 cuốn sách vào database trong 1 query
     await this.bookRepository.save(books);
   }
+
+  async updateBook(id: number, updateData: Partial<BookEntity>): Promise<BookEntity | null> {
+    await this.bookRepository.update(id, updateData);
+    return this.bookRepository.findOne({ where: { id } });
+  }
+
+  async deleteBook(id: number): Promise<void> {
+    await this.bookRepository.delete(id);
+  }
 }
