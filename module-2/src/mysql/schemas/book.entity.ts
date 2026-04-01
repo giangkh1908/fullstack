@@ -1,10 +1,11 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn, In, Index } from 'typeorm';
 
 @Entity('books')
 export class BookEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
+  @Index()
   @Column()
   title: string;
 
