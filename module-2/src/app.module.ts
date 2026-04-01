@@ -18,7 +18,7 @@ import { BookModule } from './book';
       username: envConfig().database.username,
       password: envConfig().database.password,
       database: envConfig().database.database,
-      entities: [UserEntity],
+      entities: [UserEntity, BookEntity],
       synchronize: true,
     }),
     TypeOrmModule.forFeature([UserEntity, BookEntity]),
